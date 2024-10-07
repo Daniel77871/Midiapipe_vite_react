@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* 設定為填滿整個視窗 */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* 水平居中 */
+  justify-content: center;  /* 垂直居中 */
+  width: 100%;  /* 撐滿螢幕寬度 */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#outputCanvas {
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  width: 80%;  /* 畫布寬度自適應 */
+  max-width: 800px;
+  height: auto;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  #outputCanvas {
+    width: 100%;  /* 手機上畫布寬度變為 100% */
+  }
+}
